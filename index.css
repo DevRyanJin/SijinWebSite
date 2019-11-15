@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html,body {
+    height: 100%;
+    line-height: 1;
+    color: black;
+    background-color: white;
+    font-family: 'Karla', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* header style */
+header {
+    background: black;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    z-index: 99;
+}
+
+header ul li a{
+    color: #373737;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 40px;
+    visibility: hidden;
+}
+i{
+    color: #373737;
+}
+
+a:link {
+    color: #C0B283;
+}
+
+/* A link that has been visited */
+a:visited {
+    color: #C0B283;
+}
+
+/* A link that is hovered on */
+a:hover {
+    color: #DCD0C0;
+}
+
+/* A link that is selected */
+a:active {
+    color: #f4f4f4;
+}
+
+/* header sticky style */
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+}
+
+section{
+    padding: 60px 0;
+    height: 100%;
+    position: relative;
+}
+
+/* home section style */
+.home{
+    color: #C0B283;
+    padding: 200px 0;
+    /* height: %; */
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  	filter: grayscale(100%);
+    background: url(images/image-min.jpg) no-repeat;
+		background-position: center top;
+		background-size: cover;
+  /*  background-repeat: no-repeat;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+
+    /* background-size: cover;
+    background-position: right; */
+    background-color: #f4f4f4;
+    /* background-attachment: fixed; */
+    z-index: 9;
+}
+
+.home h1{
+    /* background: black;
+    opacity: .7; */
+		color: white;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 15px 20px #373737;
+    margin-bottom: 0;
+    visibility: hidden;
+}
+
+.home h5{
+    /* background: transparent; */
+    /* background: black;
+    opacity: .7; */
+		color: white;
+    font-size: 20px;
+		font-weight: bold;
+    /*font-style: italic;*/
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 0 50px;
+  /*  display: inline-block;*/
+    letter-spacing: 2px;
+    border-radius: 2px;
+    visibility: hidden;
+}
+
+/*
+.home h1 h5{
+    background: black;
+    opacity: .4;
+} */
+
+/* section title style */
+.section-title{
+    text-align: center;
+    color: #373737;
+}
+
+.section-title h2{
+    display: inline-block;
+    font-size: 28px;
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+    padding: 0 0 10px;
+}
+
+/* about section style */
+.about{
+    background: #F4F4F4;
+}
+
+.about-info{
+    color: #373737;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    /* text-align: center; */
+    z-index: 99;
+}
+
+.about-info p{
+    color: #373737;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+/* .about-info .vision{
+    color: #C0B283;
+    font-size: 30px;
+    margin-bottom: 10px;
+} */
+
+.about-info span{
+    font-weight: bold;
+}
+
+.about-info .downloadbtn{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #DCD0C0;
+    border: 1px solid #737373;
+    border-radius: 50px;
+    color: #C0B283;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 35px;
+    position: relative;
+    z-index: 99;
+}
+
+.timeline{
+    margin-top: 30px;
+    display: flex;
+}
+
+.timeline .col{
+    margin: 5px;
+    padding: 25px 5px;
+    border: 1px solid #DCD0C0;
+    float: left;
+}
+
+.timeline h6{
+    margin: 15px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* Projects section style */
+.projects{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    z-index: 99;
+    background-color: #F4F4F4
+}
+
+.projects .projects-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.projects .col{
+    width: 40%;
+    margin: 25px 50px;
+    text-align: center;
+    color: #373737;
+}
+
+.projects .col img{
+    max-width: 48px;
+}
+
+.projects .col h3{
+    margin-top: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #C0B283;
+}
+
+.service .col p{
+    line-height: 28px;
+}
+
+
+.projects .section-footnote{
+    width: 40%;
+    /* margin: 25px 50px; */
+    color: #373737;
+    margin: 20px auto;
+    text-align: center;
+    /* z-index: 99; */
+    background-color: #F4F4F4;
+    font-size: 28px;
+}
+
+/* .projects .section-footnote a {
+    color: #373737;
+} */
+
+
+/* hobbies section style */
+.hobbies{
+    height: 70%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    z-index: 99;
+    background-color: #F4F4F4;
+}
+
+.hobbies-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0 0 80px;
+}
+
+.hobbies-info .col{
+    text-align: center;
+    float: right;
+    width: 20%;
+    margin: 1%;
+}
+
+.hobbies .col h3{
+    margin-top: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #C0B283;
+}
+
+.hobbies-info .col img{
+    max-width: 100%;
+}
+
+/* contact section style */
+.contact{
+    width: 100%;
+    height: 40%;
+    margin: 0 auto;
+    padding: 80px 0;
+    z-index: 99;
+    background: #F4F4F4;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.contact-info .col{
+    text-align: center;
+    float: right;
+    width: 20%;
+    margin: 1%;
+}
+
+.contact-info .col .p{
+    line-height: 28px;
+    color: #737373;
+}
+
+.contact-info .textField{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #DCD0C0;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    font-family: 'Karla', sans-serif;
+    color: #373737;
+    font-size: 16px;
+}
+
+.contact-info .messageField{
+    height: 200px;
+}
+
+.contact-info .submitButton{
+    background-color: #DCD0C0;
+    color: #373737;
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
